@@ -41,13 +41,10 @@ export default function Home() {
       <Box bg="tomato" height="80px">
               {installable &&
           <button className="install-button" onClick={handleInstallClick}>
-            INSTALL ME
+            Install Now
           </button>
         }</Box>
-      <Box bg="tomato" height="80px"></Box>
-      <Box bg="tomato" height="80px"></Box>
-      <Box bg="tomato" height="80px"></Box>
-      <Box bg="tomato" height="80px"></Box>
+      <Box bg="tomato" height="80px">Is installable on your device? {installable}</Box>
     </SimpleGrid>
   );
 }
