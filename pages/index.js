@@ -4,7 +4,7 @@ import { Link, Container, Button, Box } from "@chakra-ui/react";
 let deferredPrompt;
 
 export default function Home() {
-  const [installable, setInstallable] = useState(true);
+  const [installable, setInstallable] = useState(false);
 
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", e => {
